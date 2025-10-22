@@ -125,9 +125,10 @@ Terminal setelah dimasukkan jumlah lulus dan tidak lulus
    a. dalam perulangan while (atau perulangan apa pun) adalah untuk memvalidasi input nilai agar hanya menerima angka antara 0 hingga 100. Nilai di luar rentang tersebut dianggap tidak valid.
 
    b. Perintah continue digunakan untuk melewati sisa kode dalam iterasi saat ini dan langsung lanjut ke iterasi berikutnya dari perulangan.
-   
 
+2. Mengapa sintaks i++ dituliskan di akhir perulangan WHILE ? apa yang terjadi jika posisinya dituliskan di awal perulangan WHILE ?
 
+   Jawban : 
 
 
      

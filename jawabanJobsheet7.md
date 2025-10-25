@@ -128,7 +128,92 @@ Terminal setelah dimasukkan jumlah lulus dan tidak lulus
 
 2. Mengapa sintaks i++ dituliskan di akhir perulangan WHILE ? apa yang terjadi jika posisinya dituliskan di awal perulangan WHILE ?
 
-   Jawban : 
+   Jawban : Sintaks i++ ditulis di akhir perulangan while agar kenaikan nilai penghitung dilakukan setelah seluruh isi perulangan dijalankan, bukan sebelum. Jika ditulis di awal, maka nilai awal tidak akan pernah diproses karena langsung dinaikkan sebelum digunakan.
+
+3. Modifikasi kode program sehingga apabila terdapat mahasiswa yang mendapat nilai A, program dan menampilkan pesan tambahan "Bagus, Pertahankan nilainya"!
+
+   Jawaban :
+
+Jika **`jml` = 19**, maka langkah eksekusinya adalah sebagai berikut:
+
+| Iterasi ke- | Nilai `i` sebelum dicek | Kondisi `i < 19`     | Nilai `i` setelah `i++` |
+| ----------- | ----------------------- | -------------------- | ----------------------- |
+| 1           | 0                       | true                 | 1                       |
+| 2           | 1                       | true                 | 2                       |
+| 3           | 2                       | true                 | 3                       |
+| ...         | ...                     | ...                  | ...                     |
+| 19          | 18                      | true                 | 19                      |
+| 20          | 19                      | **false** → berhenti | -                       |
+
+---
+
+Kesimpulan:
+
+Perulangan `while (i < 19)` akan **berjalan sebanyak 19 kali**.
+
+Karena:
+
+* Perulangan dimulai dari `i = 0`
+* Berhenti ketika kondisi `i < 19` menjadi **false**
+* Nilai terakhir `i` sebelum berhenti adalah `19`
+
+> Jika `i` dimulai dari 0 dan kondisi `while` adalah `i < jml`, maka jumlah perulangan yang terjadi **sama dengan nilai `jml` itu sendiri.**
+
+Jadi untuk **`jml = 19` → perulangan berjalan 19 kali.** 
+
+4. Modifikasi kode program sehinggan apabila terdapat mahasiswa yang mendapatkan nilai A, Program menampilkan pesan tambahan "BAagus, pertahankankan nilainya"!
+
+ Jawaban :
+
+ Kode yang telah di tambahkan pesan "Bagus, Pertahankan nilainya!:
+
+   <img width="635" height="153" alt="Screenshot 2025-10-25 211543" src="https://github.com/user-attachments/assets/9fee219c-5d0f-4a7c-a295-2894a7caec97" />
+
+   Hasila setelah di running :
+
+   <img width="316" height="289" alt="Screenshot 2025-10-25 211823" src="https://github.com/user-attachments/assets/9334fa5f-a514-4996-a742-80e0c1211457" />
+
+
+ ### Percobaan 3 Studi kasus Transaksi di kafe- perulangan DO - WHILE 
+
+1. Pada penggunaan DO-WHILE ini, apabila nama pelanggan yang dimasukkan pertama kali adalah "batal", maka berapa kali perulangan dilakukan ?
+
+   Jawaban :
+
+   Perulangan yang dilakukan setelah membatalkan adalah 1 kali, karena perulangan akan di jalankan 1 kali sebelum berhenti
+
+2. Sebutkan kondisi berhenti yang digunakan pada perulangan DO-WHILE tersebut!
+
+   Jawaban :
+
+   kondisi yang digunakan untuk berhenti pada DO-WHILE adalah nama.equalsIgnoreCase("batal")
+
+   <img width="588" height="28" alt="Screenshot 2025-10-25 214220" src="https://github.com/user-attachments/assets/eba102e1-2cb0-46a3-b466-2922e3f99a38" />
+
+3. Apa fungsi dari perulangan nilai TRUE pada kondisi DO-WHILE ?
+
+   Jawaban :
+
+   Fungsi dari perulangan dengan kondisi true pada do-while adalah untuk membuat perulangan terus berjalan tanpa batas sampai ditemukan kondisi tertentu di dalam blok (seperti break) yang menghentikannya.Dengan kata lain perulangan while(true) digunakan agar program terus meminta input pelanggan baru sampai pengguna mengetik "batal", yang kemudian membuat perulangan berhenti lewat break.
+
+ 4. Mengapa perulangan DO-WHILE tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update ?
+
+    Jawaban :
+
+    Perulangan do-while tersebut tetap berjalan meskipun tidak ada komponen inisialisasi dan update, karena kondisi while(true) selalu bernilai benar, dan proses berhentinya dikendalikan oleh perintah break di dalam blok perulangan, bukan oleh variabel penghitung. Singkatnya do-while(true) tidak butuh inisialisasi dan update karena perulangannya berjalan tanpa batas dan dikendalikan secara logika dari dalam, bukan berdasarkan hitungan angka.
+
+    
+
+   
+
+   
+   
+
+
+ 
+
+
+
 
 
      

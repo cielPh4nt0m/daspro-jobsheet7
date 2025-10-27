@@ -212,7 +212,7 @@ Jadi untuk **`jml = 19` → perulangan berjalan 19 kali.**
 
 •	Jika input jumlah tiket tidak valid (negatif), program akan mengabaikan input tersebut dan meminta input ulang.
 
-3. <img width="893" height="1044" alt="image" src="https://github.com/user-attachments/assets/97f34d6c-e243-4925-a7ca-53c4b0f186dd" />
+2. <img width="893" height="1044" alt="image" src="https://github.com/user-attachments/assets/97f34d6c-e243-4925-a7ca-53c4b0f186dd" />
 
    Sebuah tempat parkir ingin membuat program untuk menghitung total pembayaran parkir dari beberapa kendaraan. Tarif parkir adalah Rp 3.000 per jam untuk mobil dan Rp 2.000 per jam untuk motor. Namun, jika durasi parkir lebih dari 5 jam, diberikan tarif tetap sebesar Rp 12.500 untuk semua kendaraan. Program akan terus meminta masukan selama input bukan 0. Implementasikan flowchart tersebut ke dalam bentuk kode program Java! 
 

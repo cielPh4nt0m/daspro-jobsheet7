@@ -6,17 +6,14 @@ public class parkirFor {
         int jenis, durasi;
         int total = 0;
 
-        
         for (;;) {
             System.out.print("Masukkan jenis kendaraan (1: Mobil, 2: Motor, 0: Keluar): ");
             jenis = input.nextInt();
 
-           
             if (jenis == 0) {
                 break;
             }
 
-            
             if (jenis != 1 && jenis != 2) {
                 System.out.println("Jenis kendaraan tidak valid.\n");
                 continue;
@@ -25,7 +22,6 @@ public class parkirFor {
             System.out.print("Masukkan durasi parkir (jam): ");
             durasi = input.nextInt();
 
-            
             if (durasi > 5) {
                 total += 12500;
             } else {
@@ -36,7 +32,8 @@ public class parkirFor {
                 }
             }
 
-            System.out.println("Data parkir tercatat.\n");
+            System.out.println("Data parkir tercatat.");
+            System.out.println("Total sementara: Rp " + total + "\n");
         }
 
         System.out.println("\n=== Total Pembayaran Parkir Hari Ini ===");
@@ -44,4 +41,3 @@ public class parkirFor {
         input.close();
     }
 }
-
